@@ -8,4 +8,13 @@ class nuage extends form
         parent:: __construct($x, $y, $color);
         $this->type = 'nuage';
     }
+    
+    public function getProperty () {
+        return array(
+            'Type' => $this->type,
+            'Color' => $this->color,
+            'Position X' => $this->x,
+            'Position Y' => $this->y
+        );
+    }
 }

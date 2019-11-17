@@ -11,4 +11,13 @@ class text extends element
         $this->color = $color;
         $this->type = 'text';
     }
+
+    public function getProperty () {
+        return array(
+            'Type' => $this->type,
+            'Color' => $this->color,
+            'Position X' => $this->x,
+            'Position Y' => $this->y
+        );
+    }
 }

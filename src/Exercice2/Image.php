@@ -8,4 +8,12 @@ class image extends element
         parent:: __construct($x, $y);
         $this->type = 'image';
     }
+
+    public function getProperty () {
+        return array(
+            'Type' => $this->type,
+            'Position X' => $this->x,
+            'Position Y' => $this->y
+        );
+    }
 }
